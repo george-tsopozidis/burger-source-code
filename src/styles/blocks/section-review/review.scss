@@ -1,0 +1,100 @@
+.review {
+  height: 100vh;
+  position: relative;
+
+  @include tablets {
+    height: 126.2vmin;
+  }
+
+  @include phones {
+    height: 202vmin;
+  }
+}
+
+.review-list {
+  column-count: 4;
+  column-gap: 0;
+
+  @include tablets {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include phones {
+    column-count: 3;
+    column-gap: 0;
+  }
+
+  .review-item {
+    position: relative;
+
+    .review-item__image {
+      position: relative;
+      width: 47.99rem;
+      height: 48.5rem;
+      display: block;
+      object-fit: cover;
+
+      @include tablets {
+        width: 25.6rem;
+        height: 32.3rem;
+      }
+
+      @include phones {
+        width: 24rem;
+        height: 24.2rem;
+      }
+    }
+
+    .review-item__details {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      padding: 0 3rem;
+      align-items: flex-start;
+      justify-content: center;
+      color: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(2, 2, 2, 0.4);
+      transition: opacity 0.5s linear;
+
+      @include phones {
+        padding: 1rem 2rem;
+      }
+
+      .details-title {
+        font-family: "Gagalin";
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: 3rem;
+
+        @include phones {
+          font-size: 1.7rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .details-text {
+        font-family: "Ubuntu";
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 1.7rem;
+      }
+    }
+
+    &:hover {
+      .review-item__details {
+        opacity: 1;
+      }
+    }
+  }
+}

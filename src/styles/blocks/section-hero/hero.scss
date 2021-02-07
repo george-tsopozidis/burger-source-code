@@ -1,0 +1,167 @@
+.hero {
+  padding: 5.2rem 0 6.2rem 0;
+  color: #ffffff;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @include tablets {
+    padding: 3rem 0 6.2rem 0;
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.4rem;
+
+  @include tablets {
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+  }
+}
+
+.header-logo {
+  margin-right: 9rem;
+}
+
+.header-nav {
+  margin-right: 1.5rem;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  position: relative;
+  padding: 0 1.5rem;
+
+  &::after {
+    content: "";
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+
+  &:first-child {
+    padding: 0 1.5rem 0 0;
+  }
+
+  &:last-child {
+    padding: 0 0 0 1.5rem;
+    &::after {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-family: "Ubuntu";
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.header-btn {
+  background-color: #e45028;
+  border-radius: 4px;
+  padding: 0.8rem 1.6rem;
+  font-family: "Ubuntu";
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.order {
+  @include tablets {
+    @include tablets {
+      display: none;
+    }
+  }
+}
+
+.hero-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32rem;
+
+  @include tablets {
+    flex-direction: column;
+    margin-bottom: 4.8rem;
+  }
+
+  // @include phones {
+  //   margin-bottom: 0.8rem;
+  // }
+}
+
+.hero-info__image {
+  @include tablets {
+    margin-bottom: 4.6rem;
+  }
+}
+
+.hero-info__content {
+  align-self: flex-end;
+  max-width: 41rem;
+
+  @include tablets {
+    align-self: center;
+  }
+}
+
+.content-title {
+  font-family: "Lifehack";
+  font-size: 7.5rem;
+  font-weight: 700;
+  color: #f9b43b;
+
+  @include tablets {
+    font-size: 7rem;
+    text-align: center;
+  }
+
+  @include phones {
+    font-size: 6rem;
+  }
+}
+
+.content-subtitle {
+  font-family: "Lifehack";
+  font-size: 6.5rem;
+  font-weight: 500;
+  text-align: center;
+
+  @include tablets {
+    font-size: 6rem;
+  }
+
+  @include phones {
+    font-size: 4rem;
+  }
+}
+
+.hero-toggle {
+  cursor: pointer;
+  align-self: center;
+}

@@ -1,0 +1,200 @@
+.orders {
+  background: #000000 url("./images/form-bg.png") center center / cover
+    no-repeat;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  opacity: 0.9;
+
+  &-title {
+    color: #f9b43b;
+    font-family: "Gagalin";
+    font-size: 7.2rem;
+    font-weight: 700;
+    margin-bottom: 6.5rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include tablets {
+      font-size: 4rem;
+    }
+
+    @include phones {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.form {
+  display: flex;
+
+  @include tablets {
+    padding: 0 19%;
+    flex-direction: column;
+  }
+
+  @include phones {
+    padding: 0;
+  }
+  .form__input {
+    border-radius: 6px;
+  }
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 2rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    margin-right: 0;
+  }
+}
+
+.form__title {
+  font-family: "Ubuntu";
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 0.9rem;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 2.7rem;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 2rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  padding: 1.8rem 1.1rem;
+  border: 3px solid transparent;
+
+  @include tablets {
+    padding: 0.7rem 1.1rem;
+  }
+
+  &--textarea {
+    height: 18rem;
+    resize: none;
+
+    @include tablets {
+      height: 8rem;
+    }
+  }
+
+  &:focus {
+    border-color: #e01f3d;
+    outline: none;
+  }
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 2rem;
+
+  &--checkbox {
+    .radio__visible {
+      border-radius: 0;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.radio__title {
+  font-family: "Ubuntu";
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.radio__elem {
+  display: none;
+
+  &:checked ~ .radio__visible {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.radio__visible {
+  width: 2.6rem;
+  height: 2.6rem;
+  position: relative;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 0.9rem;
+
+  &::before {
+    content: "";
+    width: 1.4rem;
+    height: 1.4rem;
+    background: #e01f3d;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.form__btns {
+  display: flex;
+  justify-content: center;
+}
+
+.form__btns-btn {
+  background-color: #e45028;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 0.8rem 1.6rem;
+  font-family: "Ubuntu";
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 2rem
+}
+
+.btn--theme--transparent {
+  font-size: 1.4rem;
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  background: transparent;
+  color: #ffffff;
+  text-transform: none;
+  transition: 0.3s linear;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    color: #ffffff;
+    background-color: transparent;
+  }
+}

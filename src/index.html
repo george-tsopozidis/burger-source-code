@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="main.min.css">
+  <link rel="shortcut icon" type="image/png" href="./images/logo.png" />
+  <title>Burger Site</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="wrapper-content">
+      <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
+        <video controls muted autoplay loop class="video-container">
+          <source src="./images/Best Burger videography -Boss Burgers of Sydney.mp4" type="video/mp4" />
+        </video>
+        <button class="switch-btn">
+          <span>
+            play
+          </span>
+          <span>
+            pause
+          </span>
+          <span class="switch"></span>
+        </button>
+        <div class="container">
+          <div class="hero-content">
+            <header class="hero-header header">
+              <div class="header-logo">
+                <a href="#" class="header-logo__link">
+                  <img src="./images/logo.png" alt="logo" class="header-logo__img">
+                </a>
+              </div>
+              <nav class="header-nav nav">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="#" data-scroll-to="benefits" class="nav-item__link">
+                      О нас
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" data-scroll-to="product" class="nav-item__link">
+                      Бургеры
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" data-scroll-to="teams" class="nav-item__link">
+                      Команда
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" data-scroll-to="menu" class="nav-item__link">
+                      Меню
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" data-scroll-to="review" class="nav-item__link">
+                      Отзывы
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" data-scroll-to="how" class="nav-item__link">
+                      как мы работаем
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" data-scroll-to="map" class="nav-item__link">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="#" data-scroll-to="orders" class="header-btn order">
+                Заказать
+              </a>
+            </header>
+            <div class="hero-info">
+              <div class="hero-info__image image">
+                <img src="./images/burger-hero.png" alt="burger-hero" class="image-picture">
+              </div>
+              <div class="hero-info__content">
+                <div class="content-title">
+                  Мы делаем
+                </div>
+                <div class="content-subtitle">
+                  натуральные бургеры
+                </div>
+              </div>
+            </div>
+            <div data-scroll-to="benefits" class="hero-toggle">
+              <img src="./images/arrow.png" alt="arrow" class="hero-toggle__arrow">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-sidemenu-theme="black" data-section-id="benefits" class="benefits">
+        <div class="container">
+          <div class="benefit">
+            <div class="benefit-title">
+              Мы лучшие
+            </div>
+            <ul class="benefit-list">
+              <li class="benefit-item">
+                <div class="benefit-img">
+                  <img src="./images/meat1.png" alt="meta" class="benefit-img__photo">
+                </div>
+                <div class="benefit-info">
+                  <div class="benefit-subtitle">
+                    100% свежее мясо
+                  </div>
+                  <div class="benefit-desc">
+                    <p>
+                      Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-img">
+                  <img src="./images/hand2.png" alt="hand" class="benefit-img__photo">
+                </div>
+                <div class="benefit-info">
+                  <div class="benefit-subtitle">
+                    Ручная сборка
+                  </div>
+                  <div class="benefit-desc">
+                    <p>
+                      Драма представляет собой деструктивный цикл.
+                      Анапест представляет собой анапест.
+                      Первое полустишие притягивает сюжетный
+                      реформаторский пафос.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-img">
+                  <img src="./images/natural3.png" alt="natural" class="benefit-img__photo">
+                </div>
+                <div class="benefit-info">
+                  <div class="benefit-subtitle">
+                    Натуральные ингредиенты
+                  </div>
+                  <div class="benefit-desc">
+                    <p>
+                      Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section data-section-id="product" class="product">
+        <div class="container">
+          <div class="product-slider">
+            <div class="product-slider__arrows">
+              <a href="#" class="product-slider__arrow product-slider__arrow--direction--prev"></a>
+              <a href="#" class="product-slider__arrow product-slider__arrow--direction--next"></a>
+            </div>
+            <ul class="product-list">
+              <li class="product-item">
+                <div class="product-left">
+                  <div class="product-left__icon icon">
+                    <svg class="icon-svg">
+                      <use xlink:href="./images/icons/sprite.svg#burger"></use>
+                    </svg>
+                    <div class="icon-text">Состав</div>
+                  </div>
+                  <div class="product-left__burgers burgers">
+                    <img src="./images/burger-photo.png" alt="burger" class="burgers-img">
+                  </div>
+                  <div class="product-left__kg kg">
+                    <img src="./images/kkal.png" alt="kg" class="kg-img">
+                    <span class="kg-info">1200</span>
+                    <span class="kg-text">ккал</span>
+                  </div>
+                </div>
+                <div class="product-right">
+                  <div class="product-right__title">
+                    Dark BEEF Burger
+                  </div>
+                  <div class="product-right__text">
+                    <p>
+                      Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя
+                      помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                    </p>
+                  </div>
+                  <div class="product-right__action action">
+                    <div class="action-price">
+                      <span class="action-price__num">500</span>
+                      <span class="action-price__rub">рублей</span>
+                    </div>
+                    <a href="#" class="action-btn">
+                      Заказать
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="product-left">
+                  <div class="product-left__icon icon">
+                    <svg class="icon-svg">
+                      <use xlink:href="./images/icons/sprite.svg#burger"></use>
+                    </svg>
+                    <div class="icon-text">Состав</div>
+                  </div>
+                  <div class="product-left__burgers burgers">
+                    <img src="./images/burger-photo.png" alt="burger" class="burgers-img">
+                  </div>
+                  <div class="product-left__kg kg">
+                    <img src="./images/kkal.png" alt="kg" class="kg-img">
+                    <span class="kg-info">1200</span>
+                    <span class="kg-text">ккал</span>
+                  </div>
+                </div>
+                <div class="product-right">
+                  <div class="product-right__title">
+                    Dark BEEF Burger
+                  </div>
+                  <div class="product-right__text">
+                    <p>
+                      Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                      двумя
+                      помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                    </p>
+                  </div>
+                  <div class="product-right__action action">
+                    <div class="action-price">
+                      <span class="action-price__num">500</span>
+                      <span class="action-price__rub">рублей</span>
+                    </div>
+                    <a href="#" class="action-btn">
+                      Заказать
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="product-left">
+                  <div class="product-left__icon icon">
+                    <svg class="icon-svg">
+                      <use xlink:href="./images/icons/sprite.svg#burger"></use>
+                    </svg>
+                    <div class="icon-text">Состав</div>
+                  </div>
+                  <div class="product-left__burgers burgers">
+                    <img src="./images/burger-photo.png" alt="burger" class="burgers-img">
+                  </div>
+                  <div class="product-left__kg kg">
+                    <img src="./images/kkal.png" alt="kg" class="kg-img">
+                    <span class="kg-info">1200</span>
+                    <span class="kg-text">ккал</span>
+                  </div>
+                </div>
+                <div class="product-right">
+                  <div class="product-right__title">
+                    Dark BEEF Burger
+                  </div>
+                  <div class="product-right__text">
+                    <p>
+                      Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                      двумя
+                      помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                    </p>
+                  </div>
+                  <div class="product-right__action action">
+                    <div class="action-price">
+                      <span class="action-price__num">500</span>
+                      <span class="action-price__rub">рублей</span>
+                    </div>
+                    <a href="#" class="action-btn">
+                      Заказать
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="product-left">
+                  <div class="product-left__icon icon">
+                    <svg class="icon-svg">
+                      <use xlink:href="./images/icons/sprite.svg#burger"></use>
+                    </svg>
+                    <div class="icon-text">Состав</div>
+                  </div>
+                  <div class="product-left__burgers burgers">
+                    <img src="./images/burger-photo.png" alt="burger" class="burgers-img">
+                  </div>
+                  <div class="product-left__kg kg">
+                    <img src="./images/kkal.png" alt="kg" class="kg-img">
+                    <span class="kg-info">1200</span>
+                    <span class="kg-text">ккал</span>
+                  </div>
+                </div>
+                <div class="product-right">
+                  <div class="product-right__title">
+                    Dark BEEF Burger
+                  </div>
+                  <div class="product-right__text">
+                    <p>
+                      Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                      двумя
+                      помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                    </p>
+                  </div>
+                  <div class="product-right__action action">
+                    <div class="action-price">
+                      <span class="action-price__num">500</span>
+                      <span class="action-price__rub">рублей</span>
+                    </div>
+                    <a href="#" class="action-btn">
+                      Заказать
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section data-section-id="teams" class="teams is-active">
+        <div class="teams-section">
+          <div class="teams-title">
+            команда
+          </div>
+          <ul class="teams-list team">
+            <li class="team-item">
+              <button class="team-item__title" type="button">
+                Дэниэл Редклиф
+              </button>
+              <div class="team-item__content content">
+                <div class="content-block">
+                  <div class="content-block__image avatar">
+                    <div class="avatar-photo">
+                      <img src="./images/team4.png" alt="manfirst" class="avatar-photo__img">
+                    </div>
+                  </div>
+                  <div class="content-block__desc desc">
+                    <div class="desc-title">
+                      Оператор
+                    </div>
+                    <div class="desc-text">
+                      С радостью поможет подобрать идеальный бургер и оформить заказ.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-item">
+              <button class="team-item__title" type="button">
+                Ричард Джеймс
+              </button>
+              <div class="team-item__content content">
+                <div class="content-block">
+                  <div class="content-block__image avatar">
+                    <div class="avatar-photo">
+                      <img src="./images/team3.png" alt="manfirst" class="avatar-photo__img">
+                    </div>
+                  </div>
+                  <div class="content-block__desc desc">
+                    <div class="desc-title">
+                      Оператор
+                    </div>
+                    <div class="desc-text">
+                      С радостью поможет подобрать идеальный бургер и оформить заказ.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-item">
+              <button class="team-item__title" type="button">
+                Джейк Финн
+              </button>
+              <div class="team-item__content content">
+                <div class="content-block">
+                  <div class="content-block__image avatar">
+                    <div class="avatar-photo">
+                      <img src="./images/team2.png" alt="manfirst" class="avatar-photo__img">
+                    </div>
+                  </div>
+                  <div class="content-block__desc desc">
+                    <div class="desc-title">
+                      Оператор
+                    </div>
+                    <div class="desc-text">
+                      С радостью поможет подобрать идеальный бургер и оформить заказ.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-item">
+                <button class="team-item__title" type="button">
+                  Николай Иванов
+                </button>
+                <div class="team-item__content content">
+                  <div class="content-block">
+                    <div class="content-block__image avatar">
+                      <div class="avatar-photo">
+                        <img src="./images/team1.png" alt="manfirst" class="avatar-photo__img">
+                      </div>
+                    </div>
+                    <div class="content-block__desc desc">
+                      <div class="desc-title">
+                        Оператор
+                      </div>
+                      <div class="desc-text">
+                        С радостью поможет подобрать идеальный бургер и оформить заказ.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </div>     
+      </section>
+      <section data-section-id="menu" class="menu">
+        <div class="menu-title">Меню</div>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a href="#" class="menu-item__title">
+              <img src="./images/menu-1.png" alt="" class="menu-item-silver">
+              <div class="menu-item__text">
+                Для мясоедов
+              </div>
+            </a>
+            <div class="menu-item__content">
+              <div class="menu-item__container">
+                <button class="menu-item__close" type="button">
+                  <img src="./images/close-menu.png" alt="close" class="menu-item__icon">
+                </button>
+                <div class="menu-item__desc">
+                  <p>
+                    Beats Solo3 headphones can last up to 40 hours on a single charge so you can use them every day. A
+                    5-minute Fast Fuel
+                    charge gives you another 3 hours of playtime. Beats signature sound with Class 1 Bluetooth headphones will
+                    accompany you
+                    wherever you go. The cups with soft ear cushions are adjustable so you can wear them all day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item menu-item-black">
+            <a href="#" class="menu-item__title">
+              <img src="./images/menu-2.png" alt="" class="menu-item-silver">
+              <div class="menu-item__text">
+                Вегетарианское
+              </div>
+            </a>
+            <div class="menu-item__content">
+              <div class="menu-item__container">
+                <button class="menu-item__close" type="button">
+                  <img src="./images/close-menu.png" alt="close" class="menu-item__icon">
+                </button>
+                <div class="menu-item__desc">
+                  <p>
+                    Beats Solo3 headphones can last up to 40 hours on a single charge so you can use them every day. A
+                    5-minute
+                    Fast Fuel
+                    charge gives you another 3 hours of playtime. Beats signature sound with Class 1 Bluetooth headphones will
+                    accompany you
+                    wherever you go. The cups with soft ear cushions are adjustable so you can wear them all day.
+      
+                    Beats Solo3 headphones can last up to 40 hours on a single charge so you can use them every day. A
+                    5-minute
+                    Fast Fuel
+                    charge gives you another 3 hours of playtime. Beats signature sound with Class 1 Bluetooth headphones will
+                    accompany you
+                    wherever you go. The cups with soft ear cushions are adjustable so you can wear them all day.
+      
+                    Beats Solo3 headphones can last up to 40 hours on a single charge so you can use them every day. A
+                    5-minute
+                    Fast Fuel
+                    charge gives you another 3 hours of playtime. Beats signature sound with Class 1 Bluetooth headphones will
+                    accompany you
+                    wherever you go. The cups with soft ear cushions are adjustable so you can wear them all day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item menu-item-red">
+            <a href="#" class="menu-item__title">
+              <img src="./images/menu-3.png" alt="" class="menu-item-silver">
+              <div class="menu-item__text">
+                Диетическое
+              </div>
+            </a>
+            <div class="menu-item__content">
+              <div class="menu-item__container">
+                <button class="menu-item__close" type="button">
+                  <img src="./images/close-menu.png" alt="close" class="menu-item__icon">
+                </button>
+                <div class="menu-item__desc">
+                  <p>
+                    Beats Solo3 headphones can last up to 40 hours on a single charge so you can use them every day. A
+                    5-minute
+                    Fast Fuel
+                    charge gives you another 3 hours of playtime. Beats signature sound with Class 1 Bluetooth headphones will
+                    accompany you
+                    wherever you go. The cups with soft ear cushions are adjustable so you can wear them all day.
+      
+                    Beats Solo3 headphones can last up to 40 hours on a single charge so you can use them every day. A
+                    5-minute
+                    Fast Fuel
+                    charge gives you another 3 hours of playtime. Beats signature sound with Class 1 Bluetooth headphones will
+                    accompany you
+                    wherever you go. The cups with soft ear cushions are adjustable so you can wear them all day.
+      
+                    Beats Solo3 headphones can last up to 40 hours on a single charge so you can use them every day. A
+                    5-minute
+                    Fast Fuel
+                    charge gives you another 3 hours of playtime. Beats signature sound with Class 1 Bluetooth headphones will
+                    accompany you
+                    wherever you go. The cups with soft ear cushions are adjustable so you can wear them all day.
+      
+                    Beats Solo3 headphones can last up to 40 hours on a single charge so you can use them every day. A
+                    5-minute
+                    Fast Fuel
+                    charge gives you another 3 hours of playtime. Beats signature sound with Class 1 Bluetooth headphones will
+                    accompany you
+                    wherever you go. The cups with soft ear cushions are adjustable so you can wear them all day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section data-section-id="review" class="review">
+       <ul class="review-list">
+         <li class="review-item">
+          <img src="./images/review-1.png" alt="face" class="review-item__image">
+           <div class="review-item__details">
+             <div class="details-title">Константин Спилберг</div>
+             <div class="details-text">
+               <p>
+                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
+                такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+               </p>
+             </div>
+            <a href="#" class="action-btn">
+              Заказать
+            </a>
+           </div>
+         </li>
+          <li class="review-item">
+            <img src="./images/team4.png" alt="face" class="review-item__image">
+            <div class="review-item__details">
+              <div class="details-title">Константин Спилберг</div>
+              <div class="details-text">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
+                  быть
+                  такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="action-btn">
+                Заказать
+              </a>
+            </div>
+          </li>
+          <li class="review-item">
+            <img src="./images/review-2.png" alt="face" class="review-item__image">
+            <div class="review-item__details details">
+              <div class="details-title">Константин Спилберг</div>
+              <div class="details-text">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
+                  быть
+                  такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="action-btn">
+                Заказать
+              </a>
+            </div>
+          </li>
+          <li class="review-item">
+            <img src="./images/review-3.png" alt="face" class="review-item__image">
+            <div class="review-item__details">
+              <div class="details-title">Константин Спилберг</div>
+              <div class="details-text">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
+                  быть
+                  такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="action-btn">
+                Заказать
+              </a>
+            </div>
+          </li>
+          <li class="review-item">
+            <img src="./images/team1.png" alt="face" class="review-item__image">
+            <div class="review-item__details">
+              <div class="details-title">Константин Спилберг</div>
+              <div class="details-text">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
+                  быть
+                  такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="action-btn">
+                Заказать
+              </a>
+            </div>
+          </li>
+          <li class="review-item">
+            <img src="./images/review-4.png" alt="face" class="review-item__image">
+            <div class="review-item__details">
+              <div class="details-title">Константин Спилберг</div>
+              <div class="details-text">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
+                  быть
+                  такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="action-btn">
+                Заказать
+              </a>
+            </div>
+          </li>
+          <li class="review-item">
+            <img src="./images/team3.png" alt="face" class="review-item__image">
+            <div class="review-item__details">
+              <div class="details-title">Константин Спилберг</div>
+              <div class="details-text">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
+                  быть
+                  такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="action-btn">
+                Заказать
+              </a>
+            </div>
+          </li>
+          <li class="review-item">
+            <img src="./images/team2.png" alt="face" class="review-item__image">
+            <div class="review-item__details">
+              <div class="details-title">Константин Спилберг</div>
+              <div class="details-text">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут
+                  быть
+                  такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="action-btn">
+                Заказать
+              </a>
+            </div>
+          </li>
+       </ul>
+      </section>
+      <section data-sidemenu-theme="black" data-section-id="how" class="how">
+        <div class="container">
+          <div class="video__container">
+            <h2 class="video-title">как мы работаем</h2>
+            <div class="video__player">
+              <video id="video" poster="./images/poster-video.png">
+                <source src="./images/Burger advertising.mp4" type="video/mp4">
+              </video>
+              <img src="./images/play-big.png" alt="Icon" class="play video__play">
+            </div>
+            <div class="video__toolbar">
+              <div class="duration">
+                <img src="./images/play-small.png" alt="Icon" class="duration__icon play">
+                <input type="range" class="duration__length" id="durationLevel" min="0">
+              </div>
+              <div class="sound">
+                <img src="./images/volume.png" alt="Icon" class="sound__img" id="micLevel">
+                <div class="sound__volume">
+                  <input type="range" class="duration__length duration__length--other" id="volumeLevel" min="0" max="10">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-section-id="orders" class="orders section--font--color--green">
+        <div class="container">
+          <h2 class="orders-title">Закажите доставку</h2>
+          <form class="form">
+            <input type="hidden" class="form__input">
+            <div class="form__col">
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Имя</div>
+                  <input type="text" name="name" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Телефон</div>
+                  <input type="text" name="phone" class="form__input">
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Улица</div>
+                  <input type="text" name="street" class="form__input">
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Дом</div>
+                  <input type="text" name="home" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Корпус</div>
+                  <input type="text" name="part" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Квартира</div>
+                  <input type="text" name="apartment" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Этаж</div>
+                  <input type="text" name="floor" class="form__input">
+                </label>
+              </div>
+            </div>
+            <div class="form__col">
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Комментарий</div>
+                  <textarea id="my-form-status" class="form__input form__input--textarea" name="comment"></textarea>
+                </label>
+              </div>
+              <div class="form__controls controls">
+                <label class="radio">
+                  <input type="radio" name="option" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Потребуется сдача</div>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="option" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Оплата по карте</div>
+                </label>
+              </div>
+              <div class="form__controls">
+                <label class="radio radio--checkbox">
+                  <input type="checkbox" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Не перезванивать</div>
+                </label>
+              </div>
+              <div class="form__btns">
+                <input type="submit" value="Заказать" class="form__btns-btn">
+                <input type="reset" value="Очистить" class="form__btns-btn btn--theme--transparent">
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section data-sidemenu-theme="black" data-section-id="map" class="map">
+        <div id="map"></div>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-content">
+              <address class="contacts">
+                <div class="contacts__place">
+                  Санкт-Петербург, ул.Бабушкина, д.12/1, 15
+                </div>
+                <a href="tel:+7812 377-13-77" class="phone-number phone-number--theme--green">
+                  <span class="phone-number__icon">
+                    <svg class="phone-number__svg">
+                      <use xlink:href="./images/icons/sprite.svg#phone-call"></use>
+                    </svg>
+                  </span>
+                  <span class="contacts__phones">
+                    +7 (812) 377-13-77
+                  </span>
+                </a>
+              </address>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    <svg class="footer__row-socials">
+                      <use xlink:href="./images/icons/sprite.svg#051-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    <svg class="footer__row-socials">
+                      <use xlink:href="./images/icons/sprite.svg#013-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    <svg class="footer__row-socials">
+                      <use xlink:href="./images/icons/sprite.svg#014-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    <svg class="footer__row-socials">
+                      <use xlink:href="./images/icons/sprite.svg#004-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <nav class="fixed-menu">
+      <ul class="fixed-menu__list">
+        <li class="fixed-menu__item fixed-menu__item--active">
+          <a href="" data-scroll-to="hero" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="" data-scroll-to="benefits" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="" data-scroll-to="product" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="" data-scroll-to="teams" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="" data-scroll-to="menu" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="" data-scroll-to="review" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="" data-scroll-to="how" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="" data-scroll-to="orders" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="" data-scroll-to="map" class="fixed-menu__link"></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="fullscreen ">
+      <div class="burger" id="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+      <div class="overlay" id="overlay">
+        <div class="overlay__menu" id="overlay__menu">
+          <nav class="menu__burger">
+            <ul class="menu__burger-list">
+              <li class="menu__burger-item">
+                <a href="#" class="menu__burger-link">О нас</a>
+              </li>
+              <li class="menu__burger-item">
+                <a href="#" class="menu__burger-link">Бургеры</a>
+              </li>
+              <li class="menu__burger-item">
+                <a href="#" class="menu__burger-link">Команда</a>
+              </li>
+              <li class="menu__burger-item">
+                <a href="#" class="menu__burger-link">Меню</a>
+              </li>
+              <li class="menu__burger-item">
+                <a href="#" class="menu__burger-link">Отзывы</a>
+              </li>
+              <li class="menu__burger-item">
+                <a href="#" class="menu__burger-link">как мы работаем</a>
+              </li>
+              <li class="menu__burger-item">
+                <a href="#" class="menu__burger-link">Контакты</a>
+              </li>
+            </ul>
+            <a href="#" class="header-btn burger-btn">
+              Заказать
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+  <script src="main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+.map {
+  height: 100vh;
+  position: relative;
+}
+
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+.footer {
+  color: #ffffff;
+  background: url("./images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding: 1rem 0 1.2rem 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  @include phones {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.contacts__place {
+  font-family: "Ubuntu";
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.phone-number {
+  display: flex;
+  align-items: center;
+
+  @include phones {
+    align-self: center;
+  }
+}
+
+.phone-number__svg {
+  fill: #e45028;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: .5rem;
+}
+
+.contacts__phones {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  color: #e45028;
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__item {
+  margin-right: 2rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__row-socials {
+  fill: #595959;
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: .3s linear;
+
+  &:hover {
+    fill: #ffffff;
+  }
+}

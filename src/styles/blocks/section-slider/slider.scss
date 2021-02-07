@@ -1,0 +1,217 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("./images/slider-bg.png") center top / cover no-repeat;
+  padding: 9rem 0;
+  height: 100vh;
+  position: relative;
+}
+
+.product-slider {
+  position: relative;
+
+  .bx-wrapper {
+    border: 0 !important;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.product-slider__arrow {
+  background: url("./images/arrow-right.png") center center no-repeat;
+  background-size: contain;
+  display: block;
+  width: 1.3rem;
+  height: 2.8rem;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  &--direction--next {
+    right: 0;
+  }
+
+  &--direction--prev {
+    left: 0;
+    transform: rotate(-180deg);
+  }
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.product-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 0 1 auto;
+}
+
+.icon {
+  opacity: 0.4;
+  background-color: #e35028;
+  border-radius: 6px;
+  padding: 1.4rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+  @include tablets {
+    display: none;
+  }
+
+  &-svg {
+    width: 4.6rem;
+    height: 4.6rem;
+    fill: #ffffff;
+    margin-bottom: 0.9rem;
+  }
+
+  &-text {
+    font-family: "Gagalin";
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+.burgers {
+  margin-bottom: 2rem;
+
+  &-img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.kg {
+  position: relative;
+
+  @include tablets {
+    display: none;
+  }
+
+  &-info {
+    position: absolute;
+    top: 2.8rem;
+    left: 1.1rem;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+
+  &-text {
+    color: #ffffff;
+    font-family: "Gagalin";
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+}
+
+.product-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  flex: 1;
+
+  @include tablets {
+    max-width: 100%;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-family: "Gagalin";
+    font-size: 7.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5.6rem;
+    text-align: left;
+
+    @include tablets {
+      text-align: center;
+      font-size: 5.5rem;
+      margin-bottom: 2rem;
+    }
+
+    @include phones {
+      font-size: 3rem;
+    }
+  }
+
+  &__text {
+    color: #ffffff;
+    font-family: "Ubuntu";
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 3.6rem;
+
+    @include tablets {
+      text-align: center;
+    }
+  }
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablets {
+    justify-content: space-around;
+  }
+
+  &-price {
+    display: flex;
+    align-items: center;
+
+    &__num {
+      color: #e35028;
+      font-family: "Gagalin";
+      font-size: 7.2rem;
+      font-weight: 700;
+
+      @include phones {
+        font-size: 5.2rem;
+      }
+    }
+
+    &__rub {
+      color: #e35028;
+      font-size: 3rem;
+      font-family: "Gagalin";
+      font-weight: 700;
+
+      @include phones {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &-btn {
+    color: #ffffff;
+    background-color: #e45028;
+    border-radius: 4px;
+    padding: 0.8rem 1.6rem;
+    font-family: "Ubuntu";
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}

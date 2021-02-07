@@ -1,0 +1,145 @@
+.fullscreen {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+  }
+}
+
+.burger {
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  height: 2.5rem;
+  width: 4rem;
+  cursor: pointer;
+  z-index: 15;
+  transition: all 0.4s;
+
+  &__line {
+    width: 82%;
+    height: 0.5rem;
+    position: absolute;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+
+    &:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:nth-child(3) {
+      bottom: 0;
+      top: initial;
+    }
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+
+  position: fixed;
+  right: 0;
+  bottom: 100%;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  &__menu {
+    padding: 18rem 0 0 0;
+  }
+}
+
+.menu__burger-list {
+  & .menu__burger-item {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Ubuntu';
+    font-size: 3rem;
+    color: #ffffff;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  & .menu__burger-link {
+    transition: .3s linear;
+    &:hover {
+      color: #e9b949;
+    }
+  }
+}
+
+.menu__burger-list {
+  margin-bottom: 6rem;
+}
+
+.burger--active {
+  .burger__line {
+    background: #bb2525;
+
+    &:nth-child(1) {
+      opacity: 0;
+    }
+
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg) translateY(-5px) translateX(5px);
+    }
+  }
+}
+
+.overlay--active {
+  bottom: 0;
+  opacity: 1;
+}
+
+.body--active-menu {
+  overflow: hidden;
+}
+
+.menu__burger {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.burger-btn {
+  color: #ffffff;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-svg {
+  width: 3rem;
+  height: 3rem;
+}
